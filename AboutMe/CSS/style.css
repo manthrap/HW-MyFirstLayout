@@ -1,0 +1,108 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.8em;
+
+}
+
+p{
+  font-size: 1em;
+  line-height: 1.7em;
+}
+
+h2{
+  font-size: 1.8em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0;
+    justify-content: space-around; }
+  #navBar h1 {
+    width: 50vw;
+    font-family: 'Sacramento', cursive;
+    font-size: 1.8em;
+    font-weight: 400;
+  }
+  #navigation {
+    display: flex;
+    width: 25vw;
+    align-items: center;
+    justify-content: space-around;
+     padding: 10px ;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+#main{
+margin: 30px 5%;
+display: grid;
+min-height: 500px;
+height:90vh;
+grid-template-rows: 70% 30%;
+grid-template-columns: 40% 60%;   
+grid-template-areas: 
+"pic aboutme"
+"contact aboutme";
+ }
+
+.highlight{
+    color: blue;
+        font-weight: bold;
+
+}
+
+.container{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#me h1{
+
+ font-size: 3em;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 600;
+ line-height: 1em;
+}
+
+#me h3{
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+#aboutme{
+grid-area: aboutme;
+padding: 10px 50px;
+overflow: scroll;
+align-items: flex-start;
+}
+
+#pic{
+  grid-area: pic;
+  background-image: url(../images/IMG_7549.JPG);
+  background-position-x: right;
+  background-size: cover;
+  box-shadow: 1px 1px 30px gray;
+}
+  
+
+
+
+#contact{
+grid-area: contact;
+justify-content: center;}
+
+#contact img{
+width: 100%;
+}
